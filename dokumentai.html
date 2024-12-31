@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <!-- 
+    pavadinimas 
+
+    saugusdarbas.eu
+        -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentų ruošimas įmonėms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styledokumentai.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+</head>
+<body>
+
+    <!-- Antraštė -->
+    <header>
+        <nav class="dropdown-menu">
+            <ul>
+                <ul><a href="home.html">Pagrindinis</a></ul>
+                <ul class="dropdown">
+                    <button class="dropbtn">Paslaugos</button>
+                    <div class="dropdown-content">
+                        <a href="dokumentai.html">Dokumentai</a>
+                        <a href="rizikosvertinimas.html">Profesinės rizikos vertinimas</a>
+                        <a href="registracijoszurnalas.html">Registracijos žurnalai</a>
+                        <a href="tarnybosatlikimas.html">DSS tarnybos funkcijų atlikimas</a>
+                        <a href="auditas.html">Auditas</a>
+                        <a href="sauga.html">Priešgaisrinė ir civilinė sauga</a>
+                    </div>
+                </ul>
+                <ul class="navbutton2"><a href="mokymai.html">Mokymai</a></ul>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Turinys -->
+    <main>
+        
+        <div class="main">
+            <section class="dokumentai">
+                <p class = "Para1">Darbuotojų saugos ir sveikatos srityje, įgyvendinant LR įstatymų reikalavimus, rengiame šiuos dokumentus: <br>
+                  
+                </p>     
+                   <div class="button-container">
+                    <span class="more_facts_button" onclick="toggleText(1)">
+                        <span class="more_facts_button_text">Darbuotojų saugos ir sveikatos instruktavimo tvarka.</span>
+                        <span class="more_facts_button_arrow"><i class="fa fa-angle-down"></i></span>
+                    </span>
+                    <!-- Hidden content for this button -->
+                    <div class="more_facts_content" id="content1">
+                        <p>Įmonės vadovo įsakymu nustatoma įmonės darbuotojų instruktavimo tvarka, kurioje nurodomi asmenys, 
+                            kurie instruktuos darbuotojus, nustatoma instruktavimo apimtis, atvejai,
+                            formos, nustatomas instruktavimo periodiškumas, nurodomas instruktavimo
+                             įforminimo periodiškumas, nurodoma, kokiu būdu darbdavys įsitikins ar 
+                             darbuotojas suprato kaip saugiai ir nepakenkiant savo ir kitų darbuotojų
+                              sveikatai atlikti pavestus darbus. </p>
+                            <!--  ar papilkinti spalvas kito paragrafo-->
+                            <p class= "grayier">
+                            Remiamasi Darbuotojų saugos ir sveikatos įstatymo 27 str. 1 d., 20 str. 2 d. ir 3 d.,
+                             LR vyriausiojo valstybinio darbo inspektoriaus patvirtintomis „Darbuotojų saugos ir 
+                             sveikatos instrukcijų rengimo ir darbuotojų, darbdavių susitarimu pasiųstų laikinam
+                              darbui į įmonę iš kitos įmonės, instruktavimo tvarkos aprašu“ bei Bendrosiomis priešgaisrinės
+                               saugos taisyklėms.</p>
+
+                               <a href="pdf/InstruktavimoTvarkosNustatymasUS.pdf" target="_blank">
+                                <button class="vdi">VDI informacija</button>
+                               </a>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <span class="more_facts_button" onclick="toggleText(2)">
+                        <span class="more_facts_button_text">Darbo tvarkos taisyklės.</span>
+                        <span class="more_facts_button_arrow"><i class="fa fa-angle-down"></i></span>
+                    </span>
+                    <!-- Hidden content for this button -->
+                    <div class="more_facts_content" id="content2">
+                        <p>
+                            Tai lokalinis (vietinis) įmonės teisės aktas, reglamentuojantis 
+                            darbuotojų priėmimo ir atleidimo tvarką, pagrindines darbuotojų ir
+                             darbdavio teises, pareigas, atsakomybę, darbo ir poilsio laiką, 
+                             atostogas bei kitus, įmonės darbui svarbius, klausimus. Darbo tvarkos
+                              taisyklės nustato bendrą įmonės darbo tvarką, drausmę, bendruosius 
+                              darbuotojų elgesio principus, taip didinant darbo funkcijų atlikimo našumą bei efektyvumą.
+                            </P>
+                            <p class="grayier">
+                            Remiamasi Darbo kodekso 3 str. 7 d. bei Darbuotojų saugos ir sveikatos įstatymu.
+                            Taip pat remiantis Darbuotojų saugos ir sveikatos įstatymu darbo tvarkos taisyklėse
+                             nustatoma incidentų darbe aplinkybių ir priežasčių tyrimas bei jų registravimas.</p>
+                             <a href="pdf/MRincidentuTyrimas.pdf" target="_blank">
+                                <button class="vdi">Vdi informacija</button>
+                               </a>
+                            </div>
+                </div><div class="button-container">
+                    <span class="more_facts_button" onclick="toggleText(3)">
+                        <span class="more_facts_button_text">SVEIKATOS PATIKROS MODULUS</span>
+                        <span class="more_facts_button_arrow"><i class="fa fa-angle-down"></i></span>
+                    </span>
+                    <!-- Hidden content for this button -->
+                    <div class="more_facts_content" id="content3">
+                        <p>
+                            Visi asmenys privalo tikrintis sveikatą prieš įsidarbindami,
+                             o dirbdami – tikrintis periodiškai, nepriklausomai nuo to 
+                             kokios srities darbuotojai jie yra. Nustatomi profilaktini cų
+                              sveikatos patikrinimų rizikos veiksniai pagal darbuotojų 
+                              atliekamas funkcijas įmonėje.   
+                            </p>
+                              <p class="grayier">
+                            Remiamasi LR Sveikatos apsaugos ministro 2000 m. gegužės 31 d.
+                             įsakymu Nr. 301 „Dėl profilaktinių sveikatos tikrinimų sveikatos
+                              priežiūros įstaigose“ bei Darbuotojų saugos ir sveikatos įstatymo 21 str.</p>
+                              <a href="pdf/PrivalomiejiDarbuotojuSveikatosTikrinimaiRekomendacijosDarbdaviams.pdf" target="_blank">
+                                <button class="vdi">Vdi informacija</button>
+                               </a>
+                    </div>
+                </div><div class="button-container">
+                    <span class="more_facts_button" onclick="toggleText(4)">
+                        <span class="more_facts_button_text">Nušalinimo nuo darbo dėl neblaivumo (girtumo) ar apsvaigimo nuo psichiką veikiančių medžiagų tvarka.</span>
+                        <span class="more_facts_button_arrow"><i class="fa fa-angle-down"></i></span>
+                    </span>
+                    <!-- Hidden content for this button -->
+                    <div class="more_facts_content" id="content4">
+                        <p>Reglamentuojamos procedūros, kaip nušalinti nuo darbo darbuotoją, kai darbuotojas darbo metu yra neblaivus (girtas) ar apsvaigęs nuo narkotinių ar toksinių medžiagų, pildomų dokumentų formos.
+                            </p>
+                            <p class="grayier">
+                            Remiamasi LR Vyriausiojo Valstybinio darbo inspektoriaus 2008 m. gegužės 7 d. įsakymu Nr. V-132 „Dėl nušalinimo nuo darbo dėl neblaivumo (girtumo) ar apsvaigimo nuo psichiką veikiančių medžiagų metodinių rekomendacijų patvirtinimo“, 2013 m. sausio 15 d. įsakymu Nr. V-18 „Dėl neblaivumo darbe keliamos rizikos ir su ja susijusių nelaimingų atsitikimų darbe (avarijų) prevencijos priemonių įgyvendinimo šalies įmonėse, įstaigose, organizacijose“ bei 2008 m. gegužės 26 d. įsakymu Nr. V-150 „Dėl nelaimingų atsitikimų darbe, susijusių su eismu, prevencijos priemonių diegimo Lietuvos Respublikos įmonėse, įstaigose ir organizacijose rekomendacijų“.</p>
+                            <a href="pdf/RekomendacijosDelAlkoholioSalinimoIstaigose.pdf" target="_blank">
+                                <button class="vdi">Vdi informacija</button>
+                               </a>
+                    </div>
+                </div><div class="button-container">
+                    <span class="more_facts_button" onclick="toggleText(5)">
+                        <span class="more_facts_button_text">Darbuotojų saugos ir sveikatos instrukcijos</span>
+                        <span class="more_facts_button_arrow"><i class="fa fa-angle-down"></i></span>
+                    </span>
+                    <!-- Hidden content for this button -->
+                    <div class="more_facts_content" id="content5">
+                        <p>Vietinis (lokalinis) norminis teisės aktas, kuriuo įvardijami, pateikiami darbo vietoje, darbo aplinkoje esami ir galimi rizikos darbuotojų saugai ir sveikatai veiksniai, nurodomi saugūs darbo metodai bei veiksmai, saugant savo ir kitų darbuotojų sveikatą bei gyvybę. Instrukcija gali būti rašytinės formos arba video, grafinė bei kitos formos laikmenos. Padeda užtikrinti įmonės darbuotojų saugą ir sveikatą, siekiama išvengti galimų rizikų darbuotojų saugai ir sveikatai atliekant jiems pavestas darbo užduotis.
+                            </p>
+                            <p class="grayier">
+                            Remiamasi 2003 m. liepos 1 d. LR Darbuotojų saugos ir sveikatos įstatymo Nr. IX-1672 (Valstybės žinios, 2003-07-16, Nr. 70-3170) 20 str., 25 str. 5 p. bei 2012 m. rugpjūčio 10 d. Lietuvos Respublikos vyriausiojo valstybinio darbo inspektoriaus įsakymo Nr. V-240 „Dėl darbuotojų saugos ir sveikatos instrukcijų rengimo ir darbuotojų, darbdavių susitarimu pasiųstų laikinam darbui į įmonę iš kitos įmonės, instruktavimo tvarkos aprašo patvirtinimo“ bei kitais, pagal atliekamų darbų pobūdį galiojančiais teisės aktais ir nurodytais jų reikalavimais.</p>
+                            <a href="pdf/RekomendacijosDelAlkoholioSalinimoIstaigose.pdf" target="_blank">
+                                <button class="vdi">Vdi informacija</button>
+                               </a>   
+                    </div>
+                </div><div class="button-container">
+                    <span class="more_facts_button" onclick="toggleText(6)">
+                        <span class="more_facts_button_text">Pareigybiniai nuostatai.</span>
+                        <span class="more_facts_button_arrow"><i class="fa fa-angle-down"></i></span>
+                    </span>
+                    <!-- Hidden content for this button -->
+                    <div class="more_facts_content" id="content6">
+                        <p>Vietinis (lokalinis) norminis teisės aktas, apibūdinantis darbuotojo pareigas, teises, atsakomybę, o svarbiausia, jo atliekamos darbo funkcijas pagal darbo sutartyje sutartas pareigas.
+                            </p>
+                            <p class="grayier">
+                            Remiamasi 2003 m. liepos 1 d. LR Darbuotojų saugos ir sveikatos įstatymo Nr. IX-1672 (Valstybės žinios, 2003-07-16, Nr. 70-3170) 25 str. 5 p.</p>
+                    </div>
+                </div><div class="button-container">
+                    <span class="more_facts_button" onclick="toggleText(7)">
+                        <span class="more_facts_button_text">Saugos ir sveikatos darbe, gaisrinės ir civilinės saugos dokumentų saugojimo terminai.</span>
+                        <span class="more_facts_button_arrow"><i class="fa fa-angle-down"></i></span>
+                    </span>
+                    <!-- Hidden content for this button -->
+                    <div class="more_facts_content" id="content7">
+                        <img src="images/Saugos-ir-sveikatos-darbe-gaisrines-ir-civilines-saugos-dokumentu-saugojimo-terminai-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>    
+
+    <!-- Poraštė -->
+    <footer>
+        <div class="contacts">
+            <p>Adresas: <!-- Čia įrašykite adresą --></p>
+            <p>El. paštas: <!-- Čia įrašykite el. paštą --></p>
+            <p>Telefonas: <!-- Čia įrašykite telefono numerį --></p>
+        </div>
+    </footer>
+    <script>
+      
+    </script>
+    <script src="script.js"></script>
+
+</body>
+</html>

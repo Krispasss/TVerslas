@@ -4,86 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagrindinis</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="temp.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 </head>
 <body>
 
-</head>
-<body>
-        <!-- 
-       
-        pakeisti nav bar:
-        reikia home +
-        paslaugos +
-        mokymai +
-        stilius 
-
-    -->
     <!-- Antraštė -->
     <header>
-        <nav class="nav-bar"> 
-            <a href="home.html"  class ="homenav">Pagrindinis</a>
-            <a href="paslaugos.html">Paslaugos</a>
-            <a href="mokymai.html">Mokymai</a>
+        <nav class="dropdown-menu">
+            <ul>
+                <ul><a href="home.html">Pagrindinis</a></ul>
+                <ul class="dropdown">
+                    <button class="dropbtn">Paslaugos</button>
+                    <div class="dropdown-content">
+                        <a href="dokumentai.html">Dokumentai</a>
+                        <a href="rizikosvertinimas.html">Profesinės rizikos vertinimas</a>
+                        <a href="registracijoszurnalas.html">Registracijos žurnalai</a>
+                        <a href="tarnybosatlikimas.html">DSS tarnybos funkcijų atlikimas</a>
+                        <a href="auditas.html">Auditas</a>
+                        <a href="sauga.html">Priešgaisrinė ir civilinė sauga</a>
+                    </div>
+                </ul>
+                <ul class="navbutton2"><a href="mokymai.html">Mokymai</a></ul>
+            </ul>
         </nav>
     </header>
-        <div class="about">
 
-        </div>   
-
-
-
-
-
-    <!-- reik pakeist
-        1. Apie ka saitas.
-        2. Linkas i paslaugas
-        3. Link i mokymus 
-    
-    
-    -->
     <!-- Turinys -->
     <main>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <h2>Pagrindinis</h2>
-                    <h2>Krispas 😉</h2>
-                    <h3>Informacinių ir ryšių technologijų studentas</h3>
+        <section class="sauga">
+            <div class="temp">
+                <h1>Mokymai</h1>
+                <ul>
+                    <p>
+                        
 
-                    <div class="clock">
-                      <p id="time"></p>
-                    </div>
+                    <b>Darbų saugos mokymai</b> – kiekvienas darbdavys, prieš pradėdamas vykdyti veiklą ar teikti paslaugas, privalo pasitikrinti darbuotojų saugos 
+                    ir sveikatos žinias (DSS) Valstybinėje darbo inspekcijoje (VDI). <br>
+                    Darbdavys nusprendžia ar DSS tarnybos funkcijas vykdys jis pats, samdys DSS specialistą pagal darbo ar paslaugų teikimo sutartį arba mažose 
+                    įmonėse šią funkciją atlikti įgalios savo darbuotoją. Priklausomai nuo to pasirenkama mokymo programa. <br> <br>
 
-                    <script src="laikrodis.js"></script>
+                    Jei darbdavys nusprendžia samdyti DSS specialistą pagal darbo ar paslaugų teikimo sutartį, jam pakanka: <br>
+                    1. Darbdavio, darbdaviui atstovaujančio asmens mokymo darbuotojų saugos ir sveikatos klausimais mokymo programos. <br> <br>
 
-                </div>
+                    Pagal šią mokymo programą DSS žinių tikrinimui galima pasirengti savarankiškai pagal mokymo temas, nurodytas Mokymo ir žinių darbuotojų saugos 
+                    ir sveikatos klausimais tikrinimo bendrųjų nuostatų 1 priede. DSS žinių tikrinimui ruošiantis savarankiškai, siūloma naudotis VDI parengta
+                     mokymosi medžiaga arba mokytis pas profesinio mokymo teikėją. Šio DSS žinių tikrinimo pakanka, jeigu darbdavys ar darbdaviui atstovaujantis 
+                     asmuo pats nevykdys DSS tarnybos funkcijų, o šioms funkcijoms atlikti samdys DSS specialistą pagal darbo ar paslaugų atlikimo sutartį arba 
+                     mažoje įmonėje DSS tarnybos funkcijas paves atlikti darbdavio įgaliotam asmeniui. <br> <br>
+
+                    Jei darbdavys pats atliks įmonės DSS tarnybos funkcijas jam reikės: <br>
+                    1. Darbdavio, darbdaviui atstovaujančio asmens, atliekančio darbuotojų saugos ir sveikatos tarnybos funkcijas visų ekonominės veiklos rūšių 
+                    įmonėse mokymo programą; <br>
+                    2. Darbdavio, darbdaviui atstovaujančio asmens, atliekančio darbuotojų saugos ir sveikatos tarnybos funkcijas II–III grupių ekonominės veiklos 
+                    rūšių įmonėse mokymo programą; <br>
+                    3. Darbdavio, darbdaviui atstovaujančio asmens, atliekančio darbuotojų saugos ir sveikatos tarnybos funkcijas III grupės ekonominės veiklos 
+                    rūšių įmonėse. <br>
+                    4. Darbuotojų saugos ir sveikatos specialisto, dirbančio visų ekonominės veiklos rūšių įmonėse mokymo programą. <br> <br>
+
+
+                    Jei darbdavys įgalios asmenį atlikti įmonės DSS tarnybos funkcijas, tą asmenį privalo siųsti mokytis pagal: <br>
+                    1. Darbdavio įgalioto asmens, atliekančio darbuotojų saugos ir sveikatos tarnybos funkcijas visų ekonominės veiklos rūšių įmonėse mokymo 
+                    programą; <br>
+                    2. Darbdavio įgalioto asmens, atliekančio darbuotojų saugos ir sveikatos tarnybos funkcijas II–III grupių ekonominės veiklos rūšių įmonėse
+                     mokymo programą; <br>
+
+                     <div id="tikslas"></div>
+                     <a href="puslapis.html#tikslas"></a>
+
+
+                    3. Darbdavio įgalioto asmens, atliekančio darbuotojų saugos ir sveikatos tarnybos funkcijas III grupės ekonominės veiklos rūšių įmonėse. <br>
+                    4. Darbuotojų saugos ir sveikatos specialisto, dirbančio visų ekonominės veiklos rūšių įmonėse mokymo programą. <br> <br>
+
+                    Pagal visas programas (išskyrus „darbdavio, darbdaviui atstovaujančio asmens mokymo darbuotojų saugos ir sveikatos klausimais mokymo programą) 
+                    mokytis privaloma pas profesinio mokymo teikėją ir tik po mokymų, profesinio mokymo teikėjui, per dvi darbo dienas, pateikus informaciją apie
+                     mokinį VDI, jis galės registruotis į egzaminą VDI. <br> <br>
+
+
+                    
+
+
+                    <b>Priešgaisrinės saugos mokymai</b> – priešgaisrinės saugos mokymo programą turi išklausyti įmonės, įstaigos, organizacijos, kurios atitinka 
+                    vidaus reikalų ministro patvirtintus kriterijus, vadovas arba tokios įmonės, įstaigos, organizacijos darbuotojas, kuriam jos vadovas paveda 
+                    kontroliuoti objekto priešgaisrinę būklę ir imtis priemonių priešgaisrinės saugos reikalavimams vykdyti. <br>
+
+                    <p>(2002 m. gruodžio 5 d. LR gaisrinės saugos įstatymo Nr. IX-1225 (Žin. 2002-12-24, Nr. 123-5518) 11 str. 5 d.)</p>
+                    
+                    Įmonės vadovas ar atsakingas asmuo turi išklausyti Priešgaisrinės apsaugos ir gelbėjimo departamento prie Vidaus reikalų ministerijos 
+                    direktoriaus 2003 m. birželio 20 d. įsakymu Nr. 110 „Dėl Įmonių, įstaigų ir organizacijų vadovų priešgaisrinės saugos programos patvirtinimo“ 
+                    patvirtintą Įmonių, įstaigų ir organizacijų vadovų ir atsakingų asmenų, kuriems pavesta kontroliuoti objekto priešgaisrinę būklę ir imtis 
+                    priemonių priešgaisrinės saugos reikalavimams vykdyti, priešgaisrinės saugos mokymo programą. <br> <br>
+
+                    MB „Saugus darbas“ organizuojami priešgaisrinės saugos mokymai ir egzaminas, po kurio yra išduodamas priešgaisrinės saugos pažymėjimas.
+                     Mokymai ir egzaminas vyksta nuotoliniu būdu. <br>
+                    Norint registruotis mokymams ir egzaminui reikia užpildyti anketą ir mes su Jumis susisieksime. <br>
+
+
+                    </p>
+
+                </ul>
+                    
             </div>
-        </div>
-    </main>      
-    <!-- reik contact info pakeist -->>
+        </section>
+    </main>    
+
     <!-- Poraštė -->
     <footer>
-      <div class="social-icons">
-          <a href="https://www.facebook.com" target="_blank" class="fa-icon">
-              <i class="fab fa-facebook"></i>
-          </a>
-          <a href="https://instagram.com" target="_blank" class="fa-icon">
-              <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.linkedin.com" target="_blank" class="fa-icon">
-            <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-      <div class="contact-info">
-          <p></p>
-          <p></p>
-          <p></p> 
-      </div>
-  </footer>
-  <script src="contact.js"></script>
+        <div class="contacts">
+            <p>Adresas: <!-- Čia įrašykite adresą --></p>
+            <p>El. paštas: <!-- Čia įrašykite el. paštą --></p>
+            <p>Telefonas: <!-- Čia įrašykite telefono numerį --></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
 </body>
 </html>

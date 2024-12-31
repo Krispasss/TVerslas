@@ -3,90 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagrindinis</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <title>Pagrindinis puslapis</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-
-</head>
-<body>
-        <!-- 
-       
-        pakeisti nav bar:
-        reikia home +
-        paslaugos +
-        mokymai +
-        stilius 
-
-    -->
-    <!-- Antraštė -->
+    <!-- Header Section -->
     <header>
-        <nav class="nav-bar"> 
-            <a href="home.html">Pagrindinis</a>
-            <a href="Paslaugos.html">Paslaugos</a>
-            <a href="resume.html">Mokymai</a>
+        <nav class="dropdown-menu">
+            <ul>
+                <ul><a href="home.html">Pagrindinis</a></ul>
+                <ul class="dropdown">
+                    <button class="dropbtn">Paslaugos</button>
+                    <div class="dropdown-content">
+                        <a href="dokumentai.html">Dokumentai</a>
+                        <a href="rizikosvertinimas.html">Profesinės rizikos vertinimas</a>
+                        <a href="registracijoszurnalas.html">Registracijos žurnalai</a>
+                        <a href="tarnybosatlikimas.html">DSS tarnybos funkcijų atlikimas</a>
+                        <a href="auditas.html">Auditas</a>
+                        <a href="sauga.html">Priešgaisrinė ir civilinė sauga</a>
+                    </div>
+                </ul>
+                <ul class="navbutton2"><a href="mokymai.html">Mokymai</a></ul>
+            </ul>
         </nav>
     </header>
-        <div class="about">
 
-        </div>   
-
-
-
-
-
-    <!-- reik pakeist
-        1. Apie ka saitas.
-        2. Linkas i paslaugas
-        3. Link i mokymus 
-    
-    
-    -->
-    <!-- Turinys -->
+    <!-- Main Content Section -->
     <main>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <h2>Pagrindinis</h2>
-                    <h2>Krispas 😉</h2>
-                    <h3>Informacinių ir ryšių technologijų studentas</h3>
+        <section class="services">
+            <h2>Paslaugos</h2>
+            <div class="service-box">
+                <div class="service1">
+                    <h3>Dokumentai</h3>
+                    <button class="expand-btn" onclick="toggleDescription('doc')">Daugiau</button>
+                    <div class="description" id="doc">
+                        <!-- Tekstas apie Dokumentus -->
 
-                    <div class="clock">
-                      <p id="time"></p>
+                        
+                         Dokumentai įmonėms <hr>
+                         Profesinės rizikos vertinimas <hr>
+                         Registracijos žurnalai <hr>
+                         DSS tarnybos funkcijų atlikimas <hr>
+                         Auditas <hr> 
+
+                        
+                         
                     </div>
-
-                    <script src="laikrodis.js"></script>
-
+                </div>
+                <div class="service2">
+                    <h3>Darbų Sauga</h3>
+                    <button class="expand-btn" onclick="toggleDescription('sauga')">Daugiau</button>
+                    <div class="description" id="sauga">
+                        <!-- Tekstas apie Saugą -->
+                    </div>
+                </div>
+                <div class="service3">
+                    <h3>Mokymai</h3>
+                    <button class="expand-btn" onclick="toggleDescription('mokymai')">Daugiau</button>
+                    <div class="description" id="mokymai">
+                        <!-- Tekstas apie Mokymus -->
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>      
-    <!-- reik contact info pakeist -->>
-    <!-- Poraštė -->
+        </section>
+    </main>
+
+    <!-- Footer Section -->
     <footer>
-      <div class="social-icons">
-          <a href="https://www.facebook.com" target="_blank" class="fa-icon">
-              <i class="fab fa-facebook"></i>
-          </a>
-          <a href="https://instagram.com" target="_blank" class="fa-icon">
-              <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.linkedin.com" target="_blank" class="fa-icon">
-            <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-      <div class="contact-info">
-          <p></p>
-          <p></p>
-          <p></p> 
-      </div>
-  </footer>
+        <div class="contacts">
+            <p>Adresas: <!-- Čia įrašykite adresą --></p>
+            <p>El. paštas: <!-- Čia įrašykite el. paštą --></p>
+            <p>Telefonas: <!-- Čia įrašykite telefono numerį --></p>
+        </div>
+    </footer>
 
-  <script src="contact.js"></script>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
