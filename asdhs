@@ -32,7 +32,6 @@ nav.dropdown-menu ul {
     margin: 0;
     padding: 0;
     display: flex; /* Align items horizontally */
-    flex-wrap: wrap; 
     justify-content: center;
     gap: 20px; /* Add spacing between items */
 }
@@ -116,12 +115,10 @@ footer {
 .services {
     display: grid; /* Use grid layout */
     grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    flex-wrap: multi; /* Single row */
     grid-gap: 2rem; /* Gap between rows and columns */
     justify-items: center; /* Center items horizontally */
     margin-top: 2rem; /* Optional, if you need space between the top and the boxes */
 }
-
 
 .services h2 {
     font-size: 2rem;
@@ -281,7 +278,7 @@ footer {
 
 a:link,
 a:visited {
-    color: #D3d9d4; /* Arba nustatykite spalvą, kurią norite naudoti */
+    color: initial; /* Arba nustatykite spalvą, kurią norite naudoti */
     text-decoration: none; /* Pašalina pabraukimą, jei reikia */
 }
 

@@ -103,7 +103,7 @@ footer {
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    background-image: url('images/fonas1.jpg');
+    background-image: url('images/mokymai.png');
     background-size: cover;
     background-position: center; 
     background-attachment: fixed; 
@@ -121,3 +121,7 @@ body {
     z-index: -1; 
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
