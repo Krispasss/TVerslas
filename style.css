@@ -116,13 +116,16 @@ footer {
 .services {
     display: grid; /* Use grid layout */
     grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    flex-wrap: multi; /* Single row */
     grid-gap: 2rem; /* Gap between rows and columns */
     justify-items: center; /* Center items horizontally */
     margin-top: 2rem; /* Optional, if you need space between the top and the boxes */
 }
 
-
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: 1fr; /* Display a single column on smaller screens */
+    }
+}
 .services h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -149,7 +152,7 @@ footer {
 
 
 .service1 {
-    background:#D3d9d4;;
+    background:#D3d9d4;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1rem;
@@ -230,7 +233,7 @@ footer {
     left: 0;
     width: 100%; /* Make it match the width of the service box */
     height: 9.75rem;
-    background-color: white;
+    background-color: #D3d9d4;
     font-size: 0.9rem;
     color: #666;
     border-radius: 8px;
@@ -257,9 +260,9 @@ footer {
     left: 0;
     width: 100%; /* Make it match the width of the service box */
     height: 5rem;
-    background-color: white;
+    background-color: #D3d9d4;
     font-size: 0.9rem;
-    color: #666;
+    color: black;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
     z-index: 10; /* Ensures the description appears above other content */
@@ -278,7 +281,10 @@ footer {
     margin: 50px auto;
     text-align: center;
 }
-
+.description-a:link,
+.description-a:visited{
+    color : black;
+}
 a:link,
 a:visited {
     color: #D3d9d4; /* Arba nustatykite spalvą, kurią norite naudoti */
