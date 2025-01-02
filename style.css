@@ -1,24 +1,23 @@
-/* Apply background image to the body only */
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background-image: url('images/fonas1.jpg'); /* Replace with your image URL */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed; /* Makes the image stay in place when scrolling */
-    color: black; /* White text for better contrast */
+    background-image: url('images/fonas1.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    color: black;
     
 }
 
-/* Overlay for body */
+
 .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-    z-index: -1; /* Puts the overlay behind all content */
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
 }
 header {
     background-color: #748d92;
@@ -31,15 +30,15 @@ nav.dropdown-menu ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Align items horizontally */
+    display: flex;
     flex-wrap: wrap; 
     justify-content: center;
-    gap: 20px; /* Add spacing between items */
+    gap: 20px; 
     z-index: 20;
 }
 
 nav.dropdown-menu ul > ul {
-    position: relative; /* Necessary for positioning dropdown */
+    position: relative; 
 }
 
 nav.dropdown-menu ul > ul > a,
@@ -61,7 +60,7 @@ nav.dropdown-menu ul > ul > button:hover {
 }
 
 .dropdown-content {
-    display: none; /* Hide dropdown by default */
+    display: none; 
     position: absolute;
     top: 100%;
     left: 0;
@@ -86,7 +85,7 @@ nav.dropdown-menu ul > ul > button:hover {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block; /* Show dropdown on hover */
+    display: block; 
 }
 
 button.dropbtn {
@@ -102,7 +101,7 @@ button.dropbtn {
 button.dropbtn:focus {
     outline: none;
 }
-/* Footer styling */
+
 footer {
     background-color: #2e3944;
     color: #D3d9d4;
@@ -115,16 +114,16 @@ footer {
     font-family: 'Source Sans Pro', sans-serif;
 }
 .services {
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-    grid-gap: 2rem; /* Gap between rows and columns */
-    justify-items: center; /* Center items horizontally */
-    margin-top: 2rem; /* Optional, if you need space between the top and the boxes */
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem; 
+    justify-items: center; 
+    margin-top: 2rem; 
 }
 
 @media (max-width: 768px) {
     .services {
-        grid-template-columns: 1fr; /* Display a single column on smaller screens */
+        grid-template-columns: 1fr;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -141,10 +140,10 @@ footer {
     margin-bottom: 1.5rem;
 }
 .service-box {
-    display: grid; /* Change this to grid */
-    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns in a row */
-    grid-gap: 2rem; /* Add space between the boxes */
-    justify-items: center; /* Center the content horizontally */
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 2rem; 
+    justify-items: center; 
     position: relative;
 }
 
@@ -238,21 +237,21 @@ footer {
 
 
 .description {
-    display: none; /* Hidden by default */
-    position: absolute; /* Allows it to overlap within the service box */
-    top: 100%; /* Places it below the title or other content */
+    display: none;
+    position: absolute; 
+    top: 100%; 
     left: 0;
-    width: 100%; /* Make it match the width of the service box */
+    width: 100%; 
     height: 9.75rem;
     background-color: #D3d9d4;
     font-size: 0.9rem;
     color: #666;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    z-index: 10; /* Ensures the description appears above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 10; 
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.5s ease-in-out; /* Smooth fade-in */
+    transition: max-height 0.5s ease-in-out; 
     z-index: 10;
 
 }
@@ -266,21 +265,21 @@ footer {
 }
 
 .description2 {
-    display: none; /* Hidden by default */
-    position: absolute; /* Allows it to overlap within the service box */
-    top: 100%; /* Places it below the title or other content */
+    display: none; 
+    position: absolute; 
+    top: 100%; 
     left: 0;
-    width: 100%; /* Make it match the width of the service box */
+    width: 100%; 
     height: 5rem;
     background-color: #D3d9d4;
     font-size: 0.9rem;
     color: black;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    z-index: 10; /* Ensures the description appears above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 10; 
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.5s ease-in-out; /* Smooth fade-in */
+    transition: max-height 0.5s ease-in-out;
     
 
 }

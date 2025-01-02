@@ -20,13 +20,13 @@ nav.dropdown-menu ul {
     margin: 0;
     padding: 0;
    
-    display: flex; /* Align items horizontally */
+    display: flex; 
     justify-content: center;
-    gap: 20px; /* Add spacing between items */
+    gap: 20px; 
 }
 
 nav.dropdown-menu ul > ul {
-    position: relative; /* Necessary for positioning dropdown */
+    position: relative; 
 }
 
 nav.dropdown-menu ul > ul > a,
@@ -47,7 +47,7 @@ nav.dropdown-menu ul > ul > button:hover {
 }
 
 .dropdown-content {
-    display: none; /* Hide dropdown by default */
+    display: none; 
     position: absolute;
     top: 100%;
     left: 0;
@@ -72,7 +72,7 @@ nav.dropdown-menu ul > ul > button:hover {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block; /* Show dropdown on hover */
+    display: block;
 }
 
 button.dropbtn {
@@ -88,7 +88,7 @@ button.dropbtn {
 button.dropbtn:focus {
     outline: none;
 }
-/* Footer styling */
+
 footer {
     background-color: #2e3944;
     color: #D3d9d4;

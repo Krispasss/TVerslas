@@ -8,16 +8,15 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: flex-start; /* Align the content to the left */
+    justify-content: flex-start; 
     flex-direction: column;
-    gap: 10px; /* Space between the buttons */
-    padding-top: 50px; /* Padding from the top */
+    gap: 10px; 
+    padding-top: 50px; 
 }
-
 .button-container {
     display: flex;
-    flex-direction: column; /* Arrange buttons vertically */
-    gap: 10px; /* Add space between buttons */
+    flex-direction: column; 
+    gap: 10px; 
 }
 
 .expand-btn {
@@ -49,25 +48,23 @@
 }
 
 
-  /* Styling for the clickable text */
   .more_facts_button {
     cursor: pointer;
     color: #3a3a39;
     font-size: 1.2rem;
     display: flex;
     align-items: center;
-    margin-bottom: 10px; /* Add space between buttons */
+    margin-bottom: 10px; 
 }
 .more_facts_button:hover {
     color: #dd120b;
 }
-/* Styling for the arrow */
+
 .more_facts_button_arrow {
     margin-left: 10px;
     font-size: 1.2rem;
 }
 
-/* Styling for the hidden content */
 .more_facts_content {
     display: none;
     margin-top: 10px;
@@ -90,24 +87,24 @@
 }
 
 .vdi {
-    background-color: white; /* Initial background color */
-    color: gray; /* Initial text color */
-    border: 2px solid gray; /* Initial border color */
-    padding: 10px 40px; /* Padding for pill shape */
-    margin: 20px; /* Space around the button */
-    border-radius: 30px; /* Rounded corners for pill effect */
-    font-size: 16px; /* Text size */
-    text-align: center; /* Center-align text */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: all 0.3s ease; /* Smooth transition for hover effects */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: white; 
+    color: gray; 
+    border: 2px solid gray;
+    padding: 10px 40px; 
+    margin: 20px; 
+    border-radius: 30px; 
+    font-size: 16px;
+    text-align: center; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .vdi:hover {
-    background-color: #da0808; /* Red background on hover */
-    color: black; /* Black text on hover */
-    border-color: #da0808; /* Match border to background on hover */
-    box-shadow: 0 0 15px rgba(218, 8, 8, 0.5); /* Enhanced shadow on hover */
-    transform: scale(1.05); /* Slightly enlarge button on hover */
+    background-color: #da0808; 
+    color: black; 
+    border-color: #da0808; 
+    box-shadow: 0 0 15px rgba(218, 8, 8, 0.5);
+    transform: scale(1.05); 
 }
 
