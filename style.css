@@ -23,7 +23,7 @@ body {
 header {
     background-color: #748d92;
     padding: 10px 0;
-   
+    position: relative;
     color: white;
 }
 
@@ -35,6 +35,7 @@ nav.dropdown-menu ul {
     flex-wrap: wrap; 
     justify-content: center;
     gap: 20px; /* Add spacing between items */
+    z-index: 20;
 }
 
 nav.dropdown-menu ul > ul {
@@ -124,6 +125,15 @@ footer {
 @media (max-width: 768px) {
     .services {
         grid-template-columns: 1fr; /* Display a single column on smaller screens */
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .services{
+        grid-gap: 1px;
+    }
+    .service-box  {
+        grid-gap: 0.5rem;
+
     }
 }
 .services h2 {
@@ -218,6 +228,7 @@ footer {
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
+    z-index: 10;
 }
 
 .expand-btn:hover {
@@ -242,6 +253,7 @@ footer {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s ease-in-out; /* Smooth fade-in */
+    z-index: 10;
 
 }
 
@@ -269,6 +281,7 @@ footer {
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.5s ease-in-out; /* Smooth fade-in */
+    
 
 }
 
@@ -284,6 +297,7 @@ footer {
 .description-a:link,
 .description-a:visited{
     color : black;
+    z-index: 20;
 }
 a:link,
 a:visited {
