@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('images/fonas1.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+    color: black;
+    
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+}
+header {
+    background-color: #748d92;
+    padding: 10px 0;
+    position: relative;
+    color: white;
+}
+
+nav.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+    z-index: 20;
+}
+
+nav.dropdown-menu ul > ul {
+    position: relative; 
+}
+
+nav.dropdown-menu ul > ul > a,
+nav.dropdown-menu ul > ul > button {
+    text-decoration: none;
+    font-size: 16px;
+    color: #D3d9d4;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav.dropdown-menu ul > ul > a:hover,
+nav.dropdown-menu ul > ul > button:hover {
+   color: #212A31;
+    
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #748d92;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    padding: 10px 0;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #D3d9d4;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color:  #748d92;
+    color: #2e3944;;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+button.dropbtn {
+    font-size: 16px;
+    color: #D3d9d4;
+    border: none;
+    cursor: pointer;
+    background: none;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+button.dropbtn:focus {
+    outline: none;
+}
+
+footer {
+    background-color: #2e3944;
+    color: #D3d9d4;
+    text-align: center;
+    width: 100%;
+    height: 110px;
+    font-size: 0.8rem;
+    margin-top: 500px;
+    padding-top: 7px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.services {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem; 
+    justify-items: center; 
+    margin-top: 2rem; 
+}
+
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .services{
+        grid-gap: 1px;
+    }
+    .service-box  {
+        grid-gap: 0.5rem;
+
+    }
+}
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.service-box {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 2rem; 
+    justify-items: center; 
+    position: relative;
+}
+
+.service-box::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.service-box > div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1rem;
+}
+
+
+.service1 {
+    background:#D3d9d4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+.service1 h3 {
+    margin: 0 0 1rem;
+    color: #748D92;
+}
+
+
+.service2 {
+    background: #D3d9d4;;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.service2 h3 {
+    margin: 0 0 1rem;
+    color:  #748D92;
+}
+
+.service3 {
+    background: #D3d9d4;;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.service3 h3 {
+    margin: 0 0 1rem;
+    color:  #748D92;
+}
+
+
+
+.expand-btn {
+    background-color: #748D92;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.expand-btn:hover {
+    background-color: #748D92;
+}
+
+
+
+.description {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    width: 100%; 
+    height: 9.75rem;
+    background-color: #D3d9d4;
+    font-size: 0.9rem;
+    color: #666;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 10; 
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out; 
+    z-index: 10;
+
+}
+
+.description a:hover{
+    color: #748D92;
+}
+
+.description2 a:hover{
+    color: #748D92;
+}
+
+.description2 {
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    width: 100%; 
+    height: 5rem;
+    background-color: #D3d9d4;
+    font-size: 0.9rem;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 10; 
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+    
+
+}
+
+
+
+
+/* Main content container */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+.description-a:link,
+.description-a:visited{
+    color : black;
+    z-index: 20;
+}
+a:link,
+a:visited {
+    color: #D3d9d4; /* Arba nustatykite spalvą, kurią norite naudoti */
+    text-decoration: none; /* Pašalina pabraukimą, jei reikia */
+}
+
+html {
+    scroll-behavior: smooth;
+}

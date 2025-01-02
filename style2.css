@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #b3B4BD;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color:  #748d92;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav .dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+main {
+    padding: 2rem;
+    text-align: center;
+    flex: 1;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.service-box {
+    display: block;
+    text-align: center;
+}
+
+.service-box::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.service-box > div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1rem;
+}
+
+
+.service1 {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.service1 h3 {
+    margin: 0 0 1rem;
+    color: #4CAF50;
+}
+
+
+.service2 {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.service2 h3 {
+    margin: 0 0 1rem;
+    color: #4CAF50;
+}
+
+.service3 {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.service3 h3 {
+    margin: 0 0 1rem;
+    color: #4CAF50;
+}
+
+.expand-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.expand-btn:hover {
+    background-color: #45a049;
+}
+
+.description {
+    display: none;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer {
+    background-color: #2e3944;
+    color: #D3d9d4;
+    text-align: center;
+    width: 100%;
+    height: 110px;
+    font-size: 0.8rem;
+    margin-top: 100px;
+    padding-top: 7px;
+    font-family: 'Source Sans Pro', sans-serif;
+}

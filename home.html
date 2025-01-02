@@ -10,75 +10,92 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
 </head>
 <body>
-    <!-- 
-       
-        pakeisti nav bar:
-        reikia home +
-        paslaugos +
-        mokymai +
-        stilius 
 
-    -->
     <!-- Antraštė -->
     <header>
-        <div class="logo">
-            <img src="nuotraukos\klogo.png" alt="Puslapio Logotipas" width="100">
-        </div>
-        <nav class="nav-bar"> 
-            <a href="home.html">Pagrindinis</a>
-            <a href="Paslaugos.html">Paslaugos</a>
-            <a href="resume.html">Mokymai</a>
+        <nav class="dropdown-menu">
+            <ul>
+                <ul><a href="home.html">Pagrindinis</a></ul>
+                <ul class="dropdown">
+                    <button class="dropbtn">Paslaugos</button>
+                    <div class="dropdown-content">
+                        <a href="dokumentai.html">Dokumentai</a>
+                        <a href="rizikosvertinimas.html">Profesinės rizikos vertinimas</a>
+                        <a href="registracijoszurnalas.html">Registracijos žurnalai</a>
+                        <a href="tarnybosatlikimas.html">DSS tarnybos funkcijų atlikimas</a>
+                        <a href="auditas.html">Auditas</a>
+                        <a href="sauga.html">Priešgaisrinė ir civilinė sauga</a>
+                    </div>
+                </ul>
+                <ul class="navbutton2"><a href="mokymai.html">Mokymai</a></ul>
+            </ul>
         </nav>
     </header>
-    <!-- reik pakeist
-        1. Apie ka saitas.
-        2. Linkas i paslaugas
-        3. Link i mokymus 
-    
-    
-    -->
+
     <!-- Turinys -->
     <main>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <h2>Pagrindinis</h2>
-                    <h2>Krispas 😉</h2>
-                    <h3>Informacinių ir ryšių technologijų studentas</h3>
+        <section class="services">
+                <div class="service1">
+                    <h3>Darbų sauga</h3>
+                    apie sauga <br>
+                    <button class="expand-btn" onclick="toggleDescriptionWithAnimation(this, 'darbusauga')">Daugiau</button>
+                    <div class="description" id="darbusauga">
+                        
+                         <a class = "description-a" href="dokumentai.html">
+                        Dokumentų ruošimas įmonėms 
+                         </a><hr>
+                         <a class = "description-a" href= "rizikosvertinimas.html">
+                                Profesinės rizikos vertinimas </a><hr>
+                            <a class = "description-a" href= "registracijoszurnalas.html">
+                                Registracijos žurnalai <hr>
+                            </a>
+                            <a class = "description-a" href = "tarnybosatlikimas.html">
+                                DSS tarnybos funkcijų atlikimas <hr>
+                            </a>
+                            <a class = "description-a" href = "auditas.html">
+                                Auditas
+                            </a>
 
-                    <div class="clock">
-                      <p id="time"></p>
+
+
                     </div>
+                </div>
+                <div class="service2">
+                    <h3>Mokymai</h3>
+                    apie mokymus <br>
+                    <button class="expand-btn" onclick="toggleDescriptionWithAnimation(this, 'mokymai')">Daugiau</button>
+                    <div class="description2" id="mokymai">
+                        
+                         <a class = "description-a" href="mokymai.html"> Darbų saugos mokymai</a>
+                        <hr>
+                        <a class = "description-a"   href="mokymai.html#tikslas" class="scroll-to" data-target="tikslas">Priešgaisrinės saugos mokymai/pažymėjimas</a>
+                        
 
-                    <script src="laikrodis.js"></script>
-
+                    </div>
+                </div>
+                <div class="service3">
+                    <h3>Priešgaisrinė ir civilinė sauga</h3>
+                    
+                    <a href="sauga.html">
+                        <button class="expand-btn">Daugiau</button>
+                    </a>
+                    <div class="description3" id="mokymai">
+                        <!-- Tekstas apie Mokymus -->
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>      
-    <!-- reik contact info pakeist -->>
+        </section>
+    </main>    
+
     <!-- Poraštė -->
     <footer>
-      <div class="social-icons">
-          <a href="https://www.facebook.com" target="_blank" class="fa-icon">
-              <i class="fab fa-facebook"></i>
-          </a>
-          <a href="https://instagram.com" target="_blank" class="fa-icon">
-              <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.linkedin.com" target="_blank" class="fa-icon">
-            <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-      <div class="contact-info">
-          <p>Kontaktinė informacija</p>
-          <p>Kontaktai: krispas@uit.lt | +370 689 23377</p>
-          <p>© 2024 Puslapio kūrėjas: Krispas</p> 
-      </div>
-  </footer>
-
-  <script src="contact.js"></script>
-
+        <div class="contacts">
+            <p>Adresas: <!-- Čia įrašykite adresą --></p>
+            <p>El. paštas: <!-- Čia įrašykite el. paštą --></p>
+            <p>Telefonas: <!-- Čia įrašykite telefono numerį --></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
